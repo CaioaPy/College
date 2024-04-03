@@ -7,6 +7,7 @@ public class atividade2 {
          * USD = BRL 2,40
          * 1)
          */
+
         System.out.println("Digite a quantidade de reais a ser convertida para dólares:");
         int BRL = leitor.nextInt();
         double convertido = BRL / 2.40;
@@ -16,6 +17,7 @@ public class atividade2 {
          * USD = BRL 2,40
          * 2)
          */
+
         System.out.println("Digite a quantidade de dólares a ser convertida para reais:");
         int USD = leitor.nextInt();
         double convertido2 = USD * 2.40;
@@ -24,6 +26,7 @@ public class atividade2 {
         /*
          * 3)
          */
+
         int AP = leitor.nextInt();
         System.out.println("Digite a altura da parede:");
         int LP = leitor.nextInt();
@@ -35,7 +38,7 @@ public class atividade2 {
         int AreaP = AP * LP;
         int AreaA = AA * LA;
         int QuantidadeA = AreaP / AreaA;
-        System.out.println("Você precisará de " + QuantidadeA + "Azulejos");
+        System.out.println("Você precisará de " + QuantidadeA + " Azulejos");
 
         /*
          * 4)
