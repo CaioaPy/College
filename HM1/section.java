@@ -14,6 +14,6 @@ public class section {
         int AreaP = AP * LP;
         int AreaA = AA * LA;
         int QuantidadeA = AreaP / AreaA;
-        System.out.println("Você precisará de " + QuantidadeA + "Azulejos");
+        System.out.println("Você precisará de " + QuantidadeA + " Azulejos");
     }
 }
