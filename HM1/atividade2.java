@@ -85,7 +85,7 @@ public class Exercicio4 {
         */
     import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio10 {
     public static void main(String[] args) {
             double A;
             double B;
