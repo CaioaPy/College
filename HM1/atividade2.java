@@ -80,10 +80,10 @@ public class Exercicio4 {
     }
 }
 
-            /*
-            *IMC = m/h²
-            *5)
-            */
+        /*
+        *IMC = m/h²
+        *5)
+        */
 import java.util.Scanner;
 
 public class Exercicio5 {
@@ -104,10 +104,10 @@ public class Exercicio5 {
     }
 }
 
-            /*
-            *A = pi*r² | C = 2pi*r
-            *6)
-            */
+        /*
+        *A = pi*r² | C = 2pi*r
+        *6)
+        */
 import java.util.Scanner;
 
 public class Exercicio6 {
@@ -128,10 +128,10 @@ public class Exercicio6 {
     }
 }
 
-            /*
-            *A = 4*pi*r² | V = (4*pi*R²)/3
-            *7)
-            */
+        /*
+        *A = 4*pi*r² | V = (4*pi*R²)/3
+        *7)
+        */
 import java.util.Scanner;
 
 public class Exercicio7 {
@@ -154,6 +154,34 @@ public class Exercicio7 {
 
     }
 }
+        /*
+        *8)
+        */
+import java.util.Scanner;
+
+public class Exercicio8 {
+    public static void main(String[] args) {
+            double MF;
+            double N1;
+            double N2;
+            double N3;
+            double N4;
+            double Total;
+        Scanner leitor = new Scanner(System.in);
+            System.out.println("Insira o valor de N1 (primeira nota):");
+            N1 = leitor.nextDouble();
+            System.out.println("Insira o valor de N2 (segunda nota):");
+            N2 = leitor.nextDouble();
+            System.out.println("Insira o valor de N3 (terceira nota):");
+            N3 = leitor.nextDouble();
+            System.out.println("Insira o valor de N1 (quarta nota):");
+            N4 = leitor.nextDouble();
+            Total = N1 + N2 + N3 + N4;
+            MF = Total / 4;
+            System.out.println("A média final é " + MF);
+
+    }
+}           
         /*
         *10)
         */
