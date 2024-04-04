@@ -1,21 +1,19 @@
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio10 {
     public static void main(String[] args) {
-        double ladoA=0;
-        double ladoB;
-        double area;
-        double perimetro;
-    Scanner sc = new Scanner(System.in);
-        System.out.println("Insira o valor do lado A:");
-        ladoA = sc.nextDouble();
-        System.out.println("Insira o valor do lado B:");
-        ladoB = sc.nextDouble();
-        area = ladoA * ladoB;
-        perimetro = 2*ladoA + 2*ladoB;
-        System.out.println("A area é = " + area);
-        System.out.println("E o perímetro é = " + perimetro);
-
-
+            double A;
+            double B;
+            double C;
+        Scanner leitor = new Scanner(System.in);
+            System.out.println("Insira o valor de A:");
+            A = leitor.nextDouble();
+            System.out.println("Insira o valor de B:");
+            B = leitor.nextDouble();
+            C = A;
+            A = B;
+            B = C;
+            System.out.println("Os novos valores são A = " + A + " e B = " + B );
+    
     }
 }
