@@ -1,11 +1,11 @@
-import java.util.Scanner;
-
-public class Exercicio1 {
-    public static void main(String[] args) {
         /*
          * USD = BRL 2,40
          * 1)
          */
+import java.util.Scanner;
+
+public class Exercicio1 {
+    public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         System.out.println("Digite a quantidade de reais a ser convertida para dólares:");
         int BRL = leitor.nextInt();
@@ -16,7 +16,8 @@ public class Exercicio1 {
          * USD = BRL 2,40
          * 2)
          */
-
+import java.util.Scanner;
+        
 public class Exercicio2 {
     public static void main(String[] args) {
         
@@ -31,6 +32,8 @@ public class Exercicio2 {
         /*
          * 3)
          */
+import java.util.Scanner;
+    
 public class Exercicio3 {
     public static void main(String[] args) {
         
@@ -54,6 +57,7 @@ public class Exercicio3 {
         /*
          * 4)
          */
+import java.util.Scanner;
 
 public class Exercicio4 {
     public static void main(String[] args) {
@@ -76,5 +80,25 @@ public class Exercicio4 {
     }
 }
         
+        /*
+        *10)
+        */
+    import java.util.Scanner;
+
+public class Exercicio4 {
+    public static void main(String[] args) {
+            double A;
+            double B;
+            double C;
+        Scanner leitor = new Scanner(System.in);
+            System.out.println("Insira o valor de A:");
+            A = leitor.nextDouble();
+            System.out.println("Insira o valor de B:");
+            B = leitor.nextDouble();
+            C = A;
+            A = B;
+            B = C;
+            System.out.println("Os novos valores são A = " + A + " e B = " + B );
+    
     }
 }
