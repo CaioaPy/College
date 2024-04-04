@@ -1,19 +1,21 @@
 import java.util.Scanner;
 
-public class section {
+public class Exercicio4 {
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
-        double AP = leitor.nextDouble();
-        System.out.println("Digite a altura da parede:");
-        double LP = leitor.nextDouble();
-        System.out.println("Digite a largura da parede:");
-        double AA = leitor.nextDouble();
-        System.out.println("Digite a altura do azulejo:");
-        double LA = leitor.nextDouble();
-        System.out.println("Digite a largura do azulejo:");
-        double AreaP = AP * LP;
-        double AreaA = AA * LA;
-        double QuantidadeA = AreaP / AreaA;
-        System.out.println("Você precisará de " + QuantidadeA + " Azulejos");
+        double ladoA=0;
+        double ladoB;
+        double area;
+        double perimetro;
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o valor do lado A:");
+        ladoA = sc.nextDouble();
+        System.out.println("Insira o valor do lado B:");
+        ladoB = sc.nextDouble();
+        area = ladoA * ladoB;
+        perimetro = 2*ladoA + 2*ladoB;
+        System.out.println("A area é = " + area);
+        System.out.println("E o perímetro é = " + perimetro);
+
+
     }
 }
