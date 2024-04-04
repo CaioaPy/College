@@ -183,6 +183,40 @@ public class Exercicio8 {
     }
 }           
         /*
+        * (Media = P1*4 + P2*4 + Ativ*2) / 10
+        *9)
+        */
+import java.util.Scanner;
+
+public class Exercicio9 {
+    public static void main(String[] args) {
+            double P1;
+            double P2;
+            double Ativ;
+            double PP1;
+            double PP2;
+            double PAtiv;
+            double Soma;
+            double Media;
+        Scanner leitor = new Scanner(System.in);
+            System.out.println("Insira o valor de P1 (primeira prova):");
+            P1 = leitor.nextDouble();
+            System.out.println("Insira o valor de P2 (segunda prova):");
+            P2 = leitor.nextDouble();
+            System.out.println("Insira o valor de Ativ (atividade):");
+            Ativ = leitor.nextDouble();
+            PP1 = P1 * 4;
+            PP2 = P2 * 4;
+            PAtiv = Ativ * 2;
+            Soma = PP1 + PP2 + PAtiv;
+            Media = Soma / 10;
+            System.out.println("O valor da média é: " + Media);
+
+    }
+}
+            
+        
+        /*
         *10)
         */
     import java.util.Scanner;
