@@ -1,18 +1,21 @@
 import java.util.Scanner;
 
-public class Exercicio6 {
+public class Exercicio7 {
     public static void main(String[] args) {
-            double r;
+            double V;
             double A;
-            double C;
-            double r2;
+            double R;
+            double R2;
+            double R3;
+            final double pi = 3.1415;
         Scanner leitor = new Scanner(System.in);
-            System.out.println("Insira o valor de r (raio): ");
-            r = leitor.nextDouble();
-            r2 = r*r;
-            A = 3.1415*r2;
-            C = 2*3.1415*r;
-            System.out.println("A area da circunferencia é = " + A + " e seu comprimento = " + C );
+            System.out.println("Insira o valor de R (raio):");
+            R = leitor.nextDouble();
+            R2 = R*R;
+            R3 = R*R*R;
+            A = 4*pi*R2;
+            V = 4*pi*R3/3;
+            System.out.println("A area é = " + A + " e o volume = " + V);
 
 
     }
