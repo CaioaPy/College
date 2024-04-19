@@ -1,0 +1,19 @@
+Ínicio
+    Mostrar Tela de Login
+    Receber informações
+        Se incorretas
+            Voltar a receber informações
+        Se corretas
+    Mostrar Tela Menu
+    Se Cadastro
+        Receber dados do usuário (Nome, Endereço, Telefone, CPF/RG, E-mail)
+        Receber dados do animal (Nome, Espécie, Raça, Idade, Peso)
+    Se Agenda
+        Mostrar Tela de Atendimento
+            Se Rotina/Emergência/Especialidades/Exames/Cirurgias
+                Mostrar Datas Disponíveis
+                Mostrar Horários Disponíveis
+                Mostrar Unidades
+                Mostrar Veterinários Disponíveis
+                Mostrar Prontuário
+fim
