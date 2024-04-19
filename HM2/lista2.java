@@ -207,9 +207,7 @@ public class Exercicio5 {
                 System.out.println("O salario liquido é de:" + salarioLiquido);
             }
         } 
-        }else
-
-    {
+        else{
         if (160 < horas) {
             horasAdicionais = horas - 160;
             valorHoras = salarioBruto / horas;
@@ -217,12 +215,13 @@ public class Exercicio5 {
             valorHorasProcessadas = valorHoras * 1.5;
             horasProcessadas = valorHorasProcessadas * horasAdicionas;
             salarioBrutoProcessado = horasProcessadas + horasBase;
-            salarioLiquido = salarioBrutoProcessado * 0.87;
+            salarioLiquido = salarioBrutoProcessado * 0.78;
             System.out.println("O salario liquido é de:" + salarioLiquido);
         } else {
-            salarioLiquido = salarioBruto * 0.87;
+            salarioLiquido = salarioBruto * 0.78;
             System.out.println("O salario liquido é de:" + salarioLiquido);
         }
 
+        }
     }
 }
