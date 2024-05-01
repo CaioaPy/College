@@ -116,16 +116,18 @@ public class exercicio8 {
     }
 }
 
-import Scanner;
-
-public class lista3 {
+public class exercicio9 {
     public static void main(String[] args) {
-        
-        
-        Scanner leitor = new Scanner(System.in);
-
-
-        
+        int x = 0;
+        for (int n = 1; n <= 500; n++) {
+            int x1;
+            x1 = n;
+            if (x1 % 2 == 0) {
+                x = x + n;
+            } else {
+            }
+        }
+        System.out.println(x);
     }
 }
 
