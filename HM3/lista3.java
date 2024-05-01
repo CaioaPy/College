@@ -63,7 +63,7 @@ public class exercicio4 {
 
 public class exercicio5 {
     public static void main(String[] args) {
-        for (int n = 1; n <= 200; n++;) {
+        for (int n = 1; n <= 200; n++) {
             int x;
             int x1;
             x = n;
@@ -86,16 +86,17 @@ public class exercicio6 {
     }
 }
 
-import Scanner;
-
-public class lista3 {
+public class exercicio7 {
     public static void main(String[] args) {
-        
-        
-        Scanner leitor = new Scanner(System.in);
-
-
-        
+        int x = 3;
+        for (int n = 0; n <= 15; n++) {
+            if (n == 0) {
+                System.out.println("1");
+            } else {
+                int n2 = (int) Math.pow(x, n);
+                System.out.println(n2);
+            }
+        }
     }
 }
 
