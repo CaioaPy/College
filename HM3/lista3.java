@@ -131,12 +131,11 @@ public class exercicio9 {
     }
 }
 
-import Scanner;
+import java.util.Scanner;
 
 public class lista3 {
     public static void main(String[] args) {
-        
-        
+        int x;
         Scanner leitor = new Scanner(System.in);
 
 
