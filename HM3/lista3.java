@@ -43,16 +43,21 @@ public class exercicio3 {
     }
 }
 
-import Scanner;
+import java.util.Scanner;
 
-public class lista3 {
+public class exercicio4 {
     public static void main(String[] args) {
-        
-        
+        int x;
         Scanner leitor = new Scanner(System.in);
-
-
-        
+        System.out.println("Insira o valor desejado menor ou igual a 50:");
+        x = leitor.nextInt();
+        while (x < 250){
+            x = x * 3;
+            if (x < 250){
+                System.out.println(x);
+            }
+            else{}
+        }
     }
 }
 
