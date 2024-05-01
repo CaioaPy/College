@@ -26,6 +26,7 @@ public class exercicio2 {
     }
 }
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class exercicio3 {
@@ -132,27 +133,22 @@ public class exercicio9 {
 }
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
-public class lista3 {
+public class exercicio10 {
     public static void main(String[] args) {
-        int x;
+        ArrayList<Integer> lista = new ArrayList<Integer>();
         Scanner leitor = new Scanner(System.in);
-
-
-        
-    }
-}
-
-import Scanner;
-
-public class lista3 {
-    public static void main(String[] args) {
-        
-        
-        Scanner leitor = new Scanner(System.in);
-
-
-        
+        for (int n = 0; n <= 4; n++) {
+            System.out.printf("Insira o número: ");
+            int x = leitor.nextInt();
+            lista.add(x);
+        }
+        Collections.sort(lista);
+        int n1 = lista.get(0);
+        int n2 = lista.get(4);
+        System.out.println("Menor valor: " + n1 + "\nMaior valor: " + n2);
     }
 }
 
