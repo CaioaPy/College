@@ -152,12 +152,71 @@ public class exercicio10 {
     }
 }
 
-import Scanner;
+import java.util.Scanner;
 
-public class lista3 {
+public class exercicio11 {
     public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        int a;
+        int b;
+        int resultado;
+        int s;
+        String t;
         Scanner leitor = new Scanner(System.in);
 
+        do {
+            System.out.println("O que você deseja fazer? (+, -, *, / ou S para sair)");
+            t = leitor.nextLine();
+            switch (t) {
+                case "+":
+                    s = 1;
+                    break;
+                case "-":
+                    s = 2;
+                    break;
+                case "*":
+                    s = 3;
+                    break;
+                case "/":
+                    s = 4;
+                    break;
+                case "S":
+                    s = 0;
+                    break;
+                default:
+                    System.out.println("invalido");
+                    s = -1;
+                    break;
+            }
+
+            if (s > 0) {
+                System.out.println("Insira o valor de a:");
+                a = leitor.nextInt();
+                leitor.nextLine();
+                System.out.println("Insira o valor de b:");
+                b = leitor.nextInt();
+                leitor.nextLine();
+
+                switch (s) {
+                    case 1:
+                        resultado = a + b;
+                        System.out.println("resultado: " + resultado);
+                        break;
+                    case 2:
+                        resultado = a - b;
+                        System.out.println("resultado: " + resultado);
+                        break;
+                    case 3:
+                        resultado = a * b;
+                        System.out.println("resultado: " + resultado);
+                        break;
+                    case 4:
+                        resultado = a / b;
+                        System.out.println("resultado: " + resultado);
+                        break;
+                }
+            }
+        } while (s != 0);
     }
 }
