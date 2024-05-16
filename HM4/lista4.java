@@ -28,3 +28,22 @@ public class exercicio2 {
 		System.out.println(".");
 	}
 }
+
+import java.util.*;
+
+public class exercicio3 {
+	public static void main(String[] args) {
+		int[] A = {64, 321, 42, 76, 176};
+		int[] B = {2, 5, 123, 532, 26};
+		int[] C = new int[5];
+		for (int i = 0; i < A.length; i++){
+		    C[i] = A[i] - B[i];
+		}
+		System.out.println("Numeros calculados! ");
+		for (int i = 0; i < C.length; i++){
+		    System.out.println("C[" + i + "]= " + C[i]);
+		    System.out.println(" ");
+		}
+		System.out.println(".");
+	}
+}
