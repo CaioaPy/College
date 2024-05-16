@@ -155,3 +155,33 @@ public class exercicio6 {
 		System.out.println(".");
 	}
 }
+
+import java.util.*;
+
+public class exercicio7 {
+	public static void main(String[] args) {
+		int[] A = new int[10];
+		int[] B = new int[10]; 
+		Random rand = new Random();
+		
+		for (int i = 0; i < A.length; i++){
+		    int x;
+		    x = rand.nextInt(1 + 30);
+		    A[i] = x;
+		    }
+	    System.out.println("Array A criado!");
+	    System.out.println(" ");
+		    
+        for (int i = 0; i < A.length; i++) {
+            int x = A[A.length - i - 1];
+            B[i] = x;
+        }
+	    System.out.println("Array B organizado!");
+	    System.out.println(" ");
+	    System.out.println("Imprimindo os arrays!");
+	    System.out.println(" ");
+	    for (int i = 0; i < A.length; i++){
+	        System.out.println("A[" + i + "] = " + A[i] + ", B[" + i + "] = " + B[i]);
+	    }
+	}		
+}
