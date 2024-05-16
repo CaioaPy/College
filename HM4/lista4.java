@@ -47,3 +47,26 @@ public class exercicio3 {
 		System.out.println(".");
 	}
 }
+
+import java.util.*;
+
+public class exercicio4
+{
+	public static void main(String[] args) {
+		int[] A = {64, 321, 42, 76, 176};
+		int[] B = {2, 5, 123, 532, 26};
+		int[] C = new int[10];
+		for (int i = 0; i < A.length; i++){
+		    C[i] = A[i];
+		}
+		for (int i = 0; i < B.length; i++){
+		    C[i + 5] = B[i];
+		}
+		System.out.println("Arrays fundidos!");
+		for (int i = 0; i < C.length; i++){
+		    System.out.println("C[" + i + "]= " + C[i]);
+		    System.out.println(" ");
+		}
+		System.out.println(".");
+	}
+}
