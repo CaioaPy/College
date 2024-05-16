@@ -116,3 +116,42 @@ public class exercicio5 {
 		System.out.println(".");
 	}
 }
+
+import java.util.*;
+
+public class exercicio6 {
+	public static void main(String[] args) {
+		int[] A = new int[8];
+		int[] B = new int[8]; 
+		
+		Random rand = new Random();
+		
+		for (int i = 0; i < A.length; i++){
+		    int x;
+		    x = rand.nextInt(1 + 20);
+		    A[i] = x;
+		}
+		System.out.println("Array criado! (A)");
+		System.out.println(" ");
+		System.out.println(".");
+		System.out.println("..");
+		System.out.println("...");
+		for (int i = 0; i < B.length; i++){
+		    int x;
+		    x = A[i] * A[i];
+		    B[i] = x;
+		}
+		System.out.println("Array calculado! (B)");
+		System.out.println(" ");
+		System.out.println(".");
+		System.out.println("..");
+		System.out.println("...");
+		System.out.println("Imprimindo Array: B!");
+		System.out.println(" ");
+		for (int i = 0; i < B.length; i++){
+		    System.out.println("B[" + i + "] = " + B[i] + " quadrado de: " + A[i]);
+		    System.out.println(" ");
+		}
+		System.out.println(".");
+	}
+}
