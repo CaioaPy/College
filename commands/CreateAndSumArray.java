@@ -16,6 +16,16 @@ public class Main {
         }
     }
     
+    public static void PrintArray(int[][] array, int linhas, int colunas) {
+        for (int i = 0; i < linhas; i++) {
+            for (int j = 0; j < colunas; j++) {
+                System.out.print(array[i][j] + " ");
+            } System.out.print("\n");
+        } 
+    }
+    
+    
+    
     public static void Sum(int[][] array1, int[][] array2, int[][] array3, int linhas, int colunas) {
         for (int i = 0; i < linhas; i++) {
             for (int j = 0; j < colunas; j++) {
@@ -37,22 +47,10 @@ public class Main {
         Sum(x, y, z, L, C);
         
         System.out.println("Matriz X: \n");
-        for (int i = 0; i < L; i++) {
-            for (int j = 0; j < C; j++){
-                System.out.print(x[i][j] + " ");
-            } System.out.print("\n");
-        } 
+        PrintArray(x, L, C);
         System.out.println("Matriz Y: \n");
-        for (int i = 0; i < L; i++) {
-            for (int j = 0; j < C; j++){
-                System.out.print(y[i][j] + " ");
-            } System.out.print("\n");
-	    }
+        PrintArray(y, L, C);
         System.out.println("Soma de X e Y: \n");
-        for (int i = 0; i < L; i++) {
-            for (int j = 0; j < C; j++){
-                System.out.print(z[i][j] + " ");
-            } System.out.print("\n");
-        }
+        PrintArray(z, L, C);
     }
 }
