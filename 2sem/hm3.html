@@ -161,14 +161,249 @@
         </tr>
     </table>
     <P>3-</P>
+    <fieldset>
     <form action="*">
         <p>Nome:
             <input type="text" name="usuario" size="15" maxlength="25">
         </p>
+        <p>Email:
+            <input type="email" name="email" size="15" maxlength="60">
+        </p>
+        <p>Data de nascimento:
+            <input type="date" name="depart" id="data">
+        </p>
         <p>Senha:
             <input type="password" name="senha" size="15" maxlength="25">
         </p>
-        <textarea name="comentario" cols="30" rows="5">Conte um pouco sobre você nessa área </textarea>
+        <p>Escolha o seu forte!
+            <br><br>
+            <input type="radio" name="genre" value="Exatas"> Exatas
+            <input type="radio" name="genre" value="Humanas"> Humanas
+        </p>
+        <p>O que você deseja receber em suas recomendações?
+            <br><br>
+            <input type="checkbox" name="arquivo" value="PDF"> PDFs
+            <input type="checkbox" name="arquivo" value="MP4"> MP4s
+            <input type="checkbox" name="arquivo" value="MP3"> MP3s
+        </p>
+        <p>Por qual dispositivo você pretende estudar?
+            <select name="aparelho">
+                <option value="computador">Computador</option>
+                <option value="celular">Celular</option>
+                <option value="notebook">Notebook</option>
+            </select>
+        </p>
+        <p>Qual sua região?
+            <label for="id_estado"></label>
+            <select name="estado" id="id_estado">
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>Agora por fim, faça sua parte e contribua para nosso repositório com um arquivo:
+            <input type="file" name="contribuicao">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </p>
+        <p>Foi indicado por alguém? Conta pra gente!
+            <input type="serach" name="pesquisa" placeholder="Escreve o nome dele aqui!">
+            <input type="submit" value="Confirmar">
+        </p>
+        <textarea name="sobre" cols="30" rows="5">Escreva um pouco sobre você nessa área </textarea>
     </form>
+    <input type="submit" value="Finalizar">
+    </fieldset>
+    <p>4-</p>
+    <table border="1">
+        <tr>
+            <td colspan="7">JANEIRO</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>S</td>
+            <td>T</td>
+            <td>Q</td>
+            <td>Q</td>
+            <td>S</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+    <p>5-</p>
+    <p>MANUTENÇÃO DE USUÁRIOS INTERNOS</p>
+    <p>Login  
+        <input type="text" name="login" size="15" maxlength="25">
+    </p>
+    <p>Senha  
+        <input type="password" name="senha" size="15" maxlength="25">
+    </p>
+    <p>Status
+        <select name="status">
+            <option value="inativo">Inativo</option>
+            <option value="ativo">Ativo</option>
+        </select>
+    </p>
+    <p>Tipo
+        <input type="radio" name="tipo" value="tecnico"> Técnico
+        <input type="radio" name="tipo" value="professor"> Professor
+        <input type="radio" name="tipo" value="aluno"> Aluno
+    </p>
+    <p>Data de criação:
+        <input type="date" name="depart" id="data">
+    </p>
+    <p>Perfil
+        <input type="radio" name="perfil" value="convidado"> Convidado
+        <input type="radio" name="perfil" value="administrador"> Administrador
+        </p>
+    <p>Observações </p>
+        <textarea name="sobre" cols="30" rows="5"> </textarea>
+    <p>Módulos
+            <input type="checkbox" name="arquivo" value="compras"> Compras
+            <input type="checkbox" name="arquivo" value="biblioteca"> Biblioteca
+            <input type="checkbox" name="arquivo" value="academico"> Acadêmico
+            <input type="checkbox" name="arquivo" value="documentacao"> Documentação
+            <input type="checkbox" name="arquivo" value="rh"> Recursos Humanos
+    </p>
+    <input type="submit" value="Cadastrar">  <input type="submit" value="Excluir">
+    <p>6-</p>
+    <h2>Identificação do Usuário</h2>
+    <p>Nome*:
+        <input type="text" name="nome" size="15" maxlength="25" required>
+    </p>
+    <p>Senha*: 
+        <input type="password" name="senha" size="15" maxlength="25" required>
+    </p>
+    <p>CPF*:
+        <input type="text" name="cpf" size="15" maxlength="12" required>
+    </p>
+    <p>Sexo*
+        <select name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+    </p>
+    <p>Data de Nascimento*:
+        <input type="date" name="nascimento" id="data" required>
+    </p>
+    <p>Estado civil*
+        <select name="estado_civ" required>
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+    </p>
+    <p>Escolaridade*
+        <select name="escolaridade" required>
+            <option value="basico">Ensino Básico</option>
+            <option value="medio">Ensino Medio</option>
+            <option value="superior">Ensino Superior</option>
+        </select>
+    </p>
+    <p>Ocupação*:
+        <input type="text" name="ocupacao" size="15" maxlength="25" required>
+    </p>
+    <p>Renda Mensal
+        <select name="renda" required>
+            <option value="4000">Até 4000</option>
+            <option value="7000">Até 7000</option>
+            <option value="9000">Mais de 9000</option>
+        </select>
+    <p>Número de dependentes
+        <select name="dependentes" required>
+            <option value="0">Nenhum</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3+">Mais que 3</option>
+        </select>
+    <p>Telefone*:
+        <input type="text" name="telefone" size="15" maxlength="25" required>
+    </p>
+    <p>Email*:
+        <input type="email" name="email" size="15" maxlength="60" required>
+    </p>
+    <h2>Localização</h2>
+    <p>Estado*
+        <select name="estado" required>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+    </p>
+    <p>Cidade*
+        <select name="cidade" required>
+            <option value="cSP">São Paulo</option>
+            <option value="copacabana">Copacabana</option>
+            <option value="cRS">holder</option>
+        </select>
+    </p>
+    <h2>Mensagem do Usuário</h2>
+    <p>Grau de Urgência*
+        <select name="urgencia" required>
+            <option value="baixo">Baixo</option>
+            <option value="medio">Medio</option>
+            <option value="alto">Alto</option>
+        </select>
+    </p>
+    <p>Mensagem</p>
+    <textarea required name="sobre" cols="30" rows="5"> </textarea>
+    <p>Reportar erro:
+        <input type="submit" value="Enviar arquivo">
+    </p>
+    <input type="submit" value="Finalizar">
+    <input type="submit" value="Limpar">
 </body>
 </html>
