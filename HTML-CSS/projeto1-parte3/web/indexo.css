@@ -1,0 +1,93 @@
+/* 
+    Created on : 19 de ago. de 2024, 09:25:18
+    Author     : 
+*/
+
+*{
+    margin: 0 auto;
+}
+header{
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+div.slogan{
+    flex:85%;
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+div.logo{
+    flex:5%;
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+}
+div.logo img{
+    height: 100%;
+    width: 95%;
+    object-fit: contain;
+}
+div.Saiba {
+    flex: 10%;
+    width: 100%;
+}
+div.Saiba button {
+    background-color: dimgray;
+    border: white;
+    color: white;
+    padding: 25px 25px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+div.Saiba button:hover {
+    background-color: white;
+    color: black;
+}
+nav{
+    width:90%;
+    height: 50px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+main{
+    width:91%;
+    height:100%;
+    margin-left: 15%;
+} 
+div.login {
+    width: 100%;
+    height: 100%;
+}
+input.botao_enter{
+    height: 25px;
+    width: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    width:91%;
+    padding: 10px;
+}
