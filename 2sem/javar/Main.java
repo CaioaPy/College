@@ -41,7 +41,7 @@ public class Main {
                 hig = q;
             }
         }
-        double total_vendas;
+        double total_vendas = 0;
         for (int t = 0; t < 10; t++) {
             total_vendas += totais.get(t);
         }
