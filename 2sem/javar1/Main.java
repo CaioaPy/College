@@ -85,8 +85,8 @@ public class Main {
     public static void exercicio2{
         //9
         int[][] matriz = new int[7][7];
-        Vector<Integer> maiores_linha = new Vector<Integer>();
-        Vector<Integer> menoress_coluna = new Vector<Integer>();
+        int[] maiores_linha = {0,0,0,0,0,0,0};
+        int[] menores_coluna = {101,101,101,101,101,101,101};
         Random rand = new Random();
         
         for(int i = 0; i < 7; i++){
@@ -95,14 +95,31 @@ public class Main {
                 matriz[i][j] = x;
             }
         }
-        
+        int linha = 0;
+        int coluna = 0;
         for(int i = 0; i < 7; i++){
             for (int j = 0; j < 7; j++){
                 int x = matriz[i][j];
                 System.out.print(x + " ");
-                if (x > )
+                if (x > maiores_linha[linha]){
+                    maiores_linha[linha] = x;    
+                }
             }
+            int y = matriz[i][0];
+            if(y < menores_coluna[coluna]){
+                menores_coluna[linha] = y;
+            }
+            linha++;
+            coluna++;
             System.out.println(" ");
+        }
+        System.out.println("menores colunas: ");
+        for (int i = 0; i < 7; i++){
+            System.out.print(menores_coluna[i] + " ");
+        }
+        System.out.println("\nmaiores linhas:");
+        for (int i = 0; i < 7; i++){
+            System.out.print(maiores_linha[i] + " ");
         }
     }
 }
