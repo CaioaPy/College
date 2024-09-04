@@ -3,7 +3,6 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         // 2)
-        double salario_base = 545.00;
         int i = 0;
 
         Vector<Double> produtos = new Vector<Double>();
@@ -48,5 +47,39 @@ public class Main {
         double comissao = total_vendas * 0.05;
         System.out.println("Vendas totais: " + total_vendas + " comissão do vendedor: " + comissao);
         System.out.println("Objeto mais vendido: " + hig + " com valor: " + precos.get(hig));
+    }
+
+    public static void ex2(String[] args) {
+        // 6)
+
+        Vector<Double> numeros = new Vector<Double>();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Insira 5 numeros");
+        int i = 0;
+        while (i < 5) {
+            double x;
+            x = scanner.nextDouble();
+            numeros.add(x);
+            i++;
+        }
+
+        System.out.print("Insira o código");
+        int d = scanner.nextInt();
+
+        switch (d) {
+            case 0:
+                break;
+            case 1:
+                System.out.print(numeros);
+                break;
+            case 2:
+                for (int y = 0; y < 5; y++) {
+                    System.out.print(numeros.get(-y));
+                }
+                break;
+            default:
+                System.out.println("Invalido");
+        }
     }
 }
