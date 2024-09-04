@@ -55,7 +55,7 @@ public class Main {
         Vector<Double> numeros = new Vector<Double>();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Insira 5 numeros");
+        System.out.println("Insira 5 numeros");
         int i = 0;
         while (i < 5) {
             double x;
@@ -64,7 +64,7 @@ public class Main {
             i++;
         }
 
-        System.out.print("Insira o código");
+        System.out.println("Insira o código");
         int d = scanner.nextInt();
 
         switch (d) {
@@ -75,7 +75,7 @@ public class Main {
                 break;
             case 2:
                 for (int y = 0; y < 5; y++) {
-                    System.out.print(numeros.get(-y));
+                    System.out.print(numeros.get(4 - y) + " ");
                 }
                 break;
             default:
