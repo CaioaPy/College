@@ -104,10 +104,10 @@ public class Main {
                 if (x > maiores_linha[linha]){
                     maiores_linha[linha] = x;    
                 }
-            }
-            int y = matriz[i][0];
-            if(y < menores_coluna[coluna]){
-                menores_coluna[linha] = y;
+                int y = matriz[j][i];
+                if(y < menores_coluna[coluna]){
+                    menores_coluna[linha] = y;
+                }
             }
             linha++;
             coluna++;
