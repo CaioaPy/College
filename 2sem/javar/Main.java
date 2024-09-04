@@ -26,6 +26,7 @@ public class Main {
             i++;
             System.out.println(i + "/10");
         }
+        scanner.close();
         i = 0;
         while (i != 10) {
             double x = produtos.get(i) * precos.get(i);
@@ -33,14 +34,19 @@ public class Main {
             i++;
         }
         System.out.print("Produto  preço  quantidade  total");
-        double hig = 0;
+        int hig = 0;
         for (int q = 0; q < 10; q++) {
             System.out.println(q + " " + precos.get(q) + "   " + produtos.get(q) + "   " + totais.get(q));
             if (produtos.get(q) > hig) {
-                hig = produtos.get(q);
+                hig = q;
             }
         }
-        hig = (int) hig;
-
+        double total_vendas;
+        for (int t = 0; t < 10; t++) {
+            total_vendas += totais.get(t);
+        }
+        double comissao = total_vendas * 0.05;
+        System.out.println("Vendas totais: " + total_vendas + " comissão do vendedor: " + comissao);
+        System.out.println("Objeto mais vendido: " + hig + " com valor: " + precos.get(hig));
     }
 }
