@@ -82,4 +82,27 @@ public class Main {
                 System.out.println("Invalido");
         }
     }
+    public static void exercicio2{
+        //9
+        int[][] matriz = new int[7][7];
+        Vector<Integer> maiores_linha = new Vector<Integer>();
+        Vector<Integer> menoress_coluna = new Vector<Integer>();
+        Random rand = new Random();
+        
+        for(int i = 0; i < 7; i++){
+            for (int j = 0; j < 7; j++){
+                int x = rand.nextInt(101);
+                matriz[i][j] = x;
+            }
+        }
+        
+        for(int i = 0; i < 7; i++){
+            for (int j = 0; j < 7; j++){
+                int x = matriz[i][j];
+                System.out.print(x + " ");
+                if (x > )
+            }
+            System.out.println(" ");
+        }
+    }
 }
