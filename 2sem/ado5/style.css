@@ -58,3 +58,16 @@ body div.dois-g {
     font-size: 14;
     font-family: Verdana;
 }
+body div.curriculo{
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+
+}
+.curriculo a{
+    color: green;
+    text-decoration: none;
+}
+.curriculo a:hover{
+    color: greenyellow;
+}
