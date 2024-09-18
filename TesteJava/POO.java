@@ -1,17 +1,21 @@
 public class POO {
+    public class Carro {
+        private String marca;
+        private String modelo;
+        private int ano;
+        public Carro(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        }
+        public void exibirInformacoes() {
+        System.out.println(”Marca: ”+ marca);
+        System.out.println(”Modelo: ”+ modelo);
+        System.out.println(”Ano: ”+ ano);
+        }
+        }
     public static void main(String[] args) {
-        System.out.print("aa");
-
+        Carro carro1 = new Carro("top", "donosemato", 2024);
+        carro1.exibirInformacoes();
     }
-    public class Pessoa {
-        private String nome;
-        private int idade;
-        public String getNome() {
-        return nome;
-        }
-        public void setIdade(int novaIdade) {
-        idade = novaIdade;
-        }
-        }
-        
 }
