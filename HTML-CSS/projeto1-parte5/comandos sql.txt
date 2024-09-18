@@ -1,0 +1,10 @@
+create database empresa;
+use empresa;
+create table users(
+    usuario varchar(20),
+    senha varchar(20),
+    nome varchar(70),
+    primary key (usuario, senha)
+);
+SELECT * from users;
+INSERT INTO users VALUES('usuario', 'senha', 'nome');
