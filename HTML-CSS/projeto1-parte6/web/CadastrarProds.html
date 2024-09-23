@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexo.css">
+    </head>
+    <body>
+    <form method="post" action="salvar_produtos.jsp">
+        <p>
+            <label for="c">Codigo</label>
+            <input id="c" type="text" name="codigo" size="10" maxlength="10">
+        </p>
+        <p>
+            <label for="n">Nome</label>
+            <input id="n" type="text" name="nome" size="20" maxlength="40">
+        </p>
+        <p>
+            <label for="m">Marca</label>
+            <input id="m" type="text" name="marca" size="20" maxlength="40">
+        </p>
+        <p>
+            <label for="p">Preço</label>
+            <input id="p" type="number" name="preco" min="0" step="0.10">
+        </p>
+        <p>
+            <label for="d">Data de fabricação</label>
+            <input id="d" type="date" name="dataFabricacao" size="20">
+        </p>
+        <p>
+            <input type="submit" name="Salvar" class="botao_enter">
+        </p>
+    </form>
+    </body>
+</html>
