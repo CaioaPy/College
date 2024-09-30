@@ -30,10 +30,10 @@
             st.setString(1, c);
             ResultSet resultado = st.executeQuery(); //executa o select
             if(resultado.next()){ //encontrou
-                out.print("Codigo: " + resultado.getString("codigo") + "  ");
-                out.print("Nome: " + resultado.getString("nome") + "  ");
-                out.print("Marca: " + resultado.getString("marca") + "  ");
-                out.print("Preço: " + resultado.getString("preco") + "  ");
+                out.print("Codigo: " + resultado.getString("codigo") + "<br>");
+                out.print("Nome: " + resultado.getString("nome") + "<br>");
+                out.print("Marca: " + resultado.getString("marca") + "<br>");
+                out.print("Preço: " + resultado.getString("preco") + "<br>");
                 out.print("Fabricação: " + resultado.getString("data_fab"));
             }
             else{ //nao encontrou

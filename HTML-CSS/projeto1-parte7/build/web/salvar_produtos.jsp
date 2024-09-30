@@ -17,6 +17,7 @@
             String c, n, m,d;
             Double p;
             Connection connec;
+            try{
             c = request.getParameter("codigo");
             n = request.getParameter("nome");
             m = request.getParameter("marca");
@@ -40,6 +41,18 @@
             st.setString(5, d);
             st.executeUpdate();
             out.print("Cadastro realizado com sucesso");
+            }
+            catch(SQLException erro){
+                if(erro.getMessage().contains("Duplicate entry")){
+                    out.print("Este produto já está cadastrado");
+            }
+            else{
+                out.print("entre em contato com o administrador");
+            }
+            }
+            catch(NumberFormatException erro){
+                out.print("O preço não pode ser vazio");
+            }
         %>
     </body>
 </html>
