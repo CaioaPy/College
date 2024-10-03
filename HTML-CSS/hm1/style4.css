@@ -1,0 +1,22 @@
+[title] {
+    border: 4px solid red;
+}
+[title='Página 3'] {
+    color: green;
+}
+[title~='X19'] {
+    padding: 10px;
+    background-color: yellow;
+}
+[title~='Link'] {
+    margin-right: 30px;
+}
+[href*='link'] {
+    outline: 4px solid blue;
+}
+[src*='grande'] {
+    border: 4px solid green;
+}
+[href^='link'] {
+    font-size: 30px;
+}
