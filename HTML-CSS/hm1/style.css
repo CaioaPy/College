@@ -1,11 +1,34 @@
 p + p {
     color: blue;
 }
-
 p + h4 {
     color: red;
 }
-
 p + h3 {
     color: red;
+}
+a:visited {
+    color: gray;
+}
+a:active {
+    color: darkred;
+}
+a:focus {
+    outline: 2px dashed blue;
+}
+a.stl1:hover {
+    color: red;
+}
+a.stl2:hover {
+    font-size: 1.5em;
+}
+a.stl3:hover {
+    background-color: yellow;
+}
+a.stl4:hover {
+    font-family: "Courier New", Courier, monospace;
+}
+a.stl5:hover {
+    border: 2px solid green;
+    padding: 5px;
 }
