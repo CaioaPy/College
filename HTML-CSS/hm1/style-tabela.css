@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+thead th {
+    background-color: #FFFF00;
+    color: green;
+    padding: 10px;
+    border: 2px solid green;
+}
+tbody tr {
+    border: 1px solid green;
+    padding: 5px;
+}
+tbody td {
+    border: 1px solid green;
+    padding: 10px;
+}
+.highlight {
+    background-color: yellow;
+}
+tbody tr:hover {
+    background-color: yellow; 
+    color: green;
+}
+td img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
