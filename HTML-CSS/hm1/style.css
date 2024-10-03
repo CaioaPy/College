@@ -1,0 +1,11 @@
+p + p {
+    color: blue;
+}
+
+p + h4 {
+    color: red;
+}
+
+p + h3 {
+    color: red;
+}
