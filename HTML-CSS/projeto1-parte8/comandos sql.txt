@@ -1,0 +1,18 @@
+create database empresa;
+use empresa;
+create table users(
+    usuario varchar(20),
+    senha varchar(20),
+    nome varchar(70),
+    primary key (usuario, senha)
+);
+INSERT INTO users VALUES('usuario', 'senha', 'nome');
+SELECT * from users;
+create table empresa.produtos(
+    codigo varchar(10),
+    nome varchar(40),
+    marca varchar(40),
+    preco double,
+    data_fab date,
+    primary key(codigo)
+);
